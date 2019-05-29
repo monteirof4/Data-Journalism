@@ -6,6 +6,12 @@ function makeResponsive() {
   if (!svgArea.empty()) {
     svgArea.remove();
   }
+
+  var tip = d3.select(".d3-tip");
+
+  if (!tip.empty()) {
+    tip.remove();
+  }
   
   // Set width and height sizes
   var svgWidth = 960;
